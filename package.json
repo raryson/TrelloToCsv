@@ -1,0 +1,22 @@
+{
+  "name": "trello",
+  "version": "1.0.0",
+  "description": "Trello CSV Generator",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "ejs": "^2.5.6",
+    "express": "^4.15.2",
+    "json-2-csv": "^2.1.0",
+    "json2csv": "^3.7.3",
+    "jsonexport": "^1.5.2",
+    "node-trello": "^1.1.2",
+    "ya-csv": "^0.10.1"
+  }
+}

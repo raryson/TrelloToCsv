@@ -1,0 +1,44 @@
+<html>
+<% include ../partials/head %>
+
+    <body>
+        <section id="home">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <span class="main-tittle" id="trello">Trello</span><span class="main-tittle" id="to">To</span>
+                        <span
+                            class="main-tittle" id="csv">CSV</span>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="whitebox">
+                            <span class="tittle-box boxfont">What is it?</span>
+                            <span class="content-box boxfont">This is a CSV generator for your boards in Trello, ideal for anyone who wants to build that SCRUM card report using Trello and is lazy to do it manually :)
+</br>With it you can generate reports of your card columns based on the labels.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="app">
+            <div class="container">
+                <div class="offset-md-2 col-md-8 offset-md-2">
+                    <h1 class="h1-class">CSV Generator</h1>
+                    <div id="labelTrelloLogin">
+                        <label for="trelloLogin">Para utilizar o CSV Generator primeiro é preciso se logar no Trello</label>
+                        <input type="button" name="trelloLogin" id="trelloLogin" class="btn btn-primary btn-lg btn-block margin-md-t btn-shadow"
+                            value="Botão mágico para autentificar com o Trello"></input>
+                    </div>
+                    <form method="post" action="/download">
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+        <script src="home.js"></script>
+    </body>
+
+</html>
