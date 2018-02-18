@@ -40,8 +40,8 @@ module.exports = {
   },
   getTrelloCards(t, id, labelObject, callback) {
     const concatResult = []
-    t.get('/1/lists/' + id + '?cards=all&card_fields=labels,name,shortUrl&', (err, data) => {
-      data.cards.forEach((element, index, array) => {
+    t.get('/1/lists/' + id + '/cards?card_fields=labels,name,shortUrl&', (err, data) => {
+      data.forEach((element, index, array) => {
         element.labels.forEach((ele, ind, arr) => {
           labelObject.forEach((labelName) => {
             if (ele.name === labelName) {
